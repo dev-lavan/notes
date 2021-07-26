@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:notes/addNote.dart';
+import 'package:notes/login.dart';
 
 class NoteDisplay extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _NoteDisplayState extends State<NoteDisplay> {
                   context, MaterialPageRoute(builder: (context) => AddNote()));
             }),
         appBar: AppBar(
-          actions: [IconButton(onPressed: (){ FirebaseAuth.instance.signOut(); Navigator.pop(context);}, icon: Icon(Icons.logout, color: Colors.red,))],
+          actions: [IconButton(onPressed: (){ FirebaseAuth.instance.signOut(); Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));} ,  icon: Icon(Icons.logout, color: Colors.red,))],
           title: Text("Notes")
           ),
         body: Container(
