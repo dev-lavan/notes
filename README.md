@@ -1,10 +1,10 @@
 # notes
 
-A new Flutter project.
+A Flutter and Firebase based project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Creating a minor notes application to learn CRUD operation based on flutter and firebase
 
 A few resources to get you started if this is your first Flutter project:
 
