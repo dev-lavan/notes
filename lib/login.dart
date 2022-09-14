@@ -13,7 +13,6 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-
   bool val = false;
   String hPassword = "";
   TextEditingController _displayNameController = TextEditingController();
@@ -23,7 +22,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Container(
-    
       child: SafeArea(
         child: Scaffold(
             appBar: AppBar(title: Text("Login/Signup")),
@@ -35,26 +33,24 @@ class _LoginState extends State<Login> {
                     height: 50,
                   ),
                   TextField(
-                    style: TextStyle(color:Colors.green),
+                    style: TextStyle(color: Colors.green),
                     controller: _email,
                     decoration: InputDecoration(
-                      
                       errorText: null,
                       hintText: "Email adress",
                       hintStyle: TextStyle(color: Colors.green),
                       fillColor: Colors.red,
                       focusColor: Colors.yellow,
-                      
-                      ),
+                    ),
                   ),
                   TextField(
-                    obscureText : true,
-                     style: TextStyle(color:Colors.green),
+                    obscureText: true,
+                    style: TextStyle(color: Colors.green),
                     controller: _password,
                     decoration: InputDecoration(
-                      //errorText: hPassword,
-                      hintStyle: TextStyle(color: Colors.green),
-                      hintText: "Password"),
+                        //errorText: hPassword,
+                        hintStyle: TextStyle(color: Colors.green),
+                        hintText: "Password"),
                   ),
                   SizedBox(
                     height: 20,
@@ -103,9 +99,8 @@ class _LoginState extends State<Login> {
                     hPassword,
                     style: TextStyle(color: Colors.red, fontSize: 15),
                   ),
-               ],
+                ],
               ),
-              
             )),
       ),
     );
